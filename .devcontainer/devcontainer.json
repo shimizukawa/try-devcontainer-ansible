@@ -14,6 +14,10 @@
 		"python": "os-provided"
 	},
 
-	// "postCreateCommand": "uname -a",
+	"containerEnv": {
+		"LC_ALL": "en_US.UTF-8"
+	},
+
+	"postCreateCommand": "bash .devcontainer/post_create_command.sh",
 	"postStartCommand": "bash .devcontainer/post_start_command.sh"
 }
