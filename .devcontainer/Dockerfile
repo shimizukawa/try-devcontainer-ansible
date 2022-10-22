@@ -8,3 +8,5 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     mysql-client \
     python3-pip \
     python3-venv
+
+RUN pipx install ansible --verbose --include-deps
