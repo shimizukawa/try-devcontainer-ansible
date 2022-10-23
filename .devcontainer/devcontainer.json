@@ -8,14 +8,22 @@
 
 	"remoteUser": "vscode",
 	"features": {
-		"docker-in-docker": "latest",
-		"git": "latest",
-		"github-cli": "latest",
-		"python": "os-provided"
+		"ghcr.io/devcontainers/features/docker-in-docker:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/github-cli:1": {
+			"version": "latest"
+		},
+		"ghcr.io/devcontainers/features/python:1": {
+			"version": "os-provided"
+		}
 	},
 
 	"containerEnv": {
-		"LC_ALL": "en_US.UTF-8"
+		"LC_ALL": "en_US.UTF-8"  // to prevent UnicodeEncodeError on pipx install
 	},
 
 	"postCreateCommand": "bash .devcontainer/post_create_command.sh",
