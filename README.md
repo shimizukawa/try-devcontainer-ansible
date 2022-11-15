@@ -1,1 +1,1 @@
-# try-devcontainer-rails-redmine
+# try-devcontainer-ansible
